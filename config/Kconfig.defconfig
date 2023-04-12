@@ -1,2 +1,4 @@
+if SHIELD_NICE_VIEW
 config ZMK_DISPLAY
 	select LV_FONT_MONTSERRAT_18 
+endif
