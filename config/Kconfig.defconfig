@@ -1,0 +1,2 @@
+config ZMK_DISPLAY
+	select LV_FONT_MONTSERRAT_18 
