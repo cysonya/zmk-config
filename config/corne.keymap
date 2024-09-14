@@ -12,7 +12,9 @@
 #define LOWER   1
 #define RAISE   2
 #define FUNC    3
-#define NUM     4
+#define MAC     4
+// Meh key
+#define MEH LS(LC(LALT))
 
 / {
         keymap {
@@ -28,7 +30,7 @@
    &kp TILDE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp DEL
    &sk LALT  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT  &tog 4
    &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &sl FUNC
-        &sk LCTRL  &mt LGUI RET &lt 1 TAB    &lt 2 BSPC &kp SPACE &sk RSHFT
+        &sk LCTRL  &mt LGUI RET &lt 1 TAB    &lt 2 BSPC &mt MEH SPACE &sk RSHFT
                         >;
                 };
                 lower_layer {
@@ -71,17 +73,17 @@
                                 &none   &none   &none        &none      &none        &none
                         >;
                 };
-                num_layer {
+                mac_layer {
 // -----------------------------------------------------------------------------------------
-// |    | DEL |  7  |  8  |  9  |  -  |   |    |    |    |    |    |    |
-// |    | Bksp|  4  |  5  |  6  |  +  |   |    |    |    |    |    |    |
-// |    |  /  |  1  |  2  |  3  |  *  |   |    |    |    |    |    |    |
-//                  |  0  |  .  | ENT |   | Bksp |  SPC  |     |
+// |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
+// | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '"  |  TG(NUM)   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | FUNC  |
+//                | LCTRL | ENT | LOWER/Tab |     | RAISE/BSPC | HYPER/SPACE | RSHFT |
                         bindings = <
-   &trans  &kp DEL       &kp N7  &kp N8  &kp N9  &kp KP_MINUS           &none   &none   &none   &none   &none   &trans
-   &trans  &kp BSPC      &kp N4  &kp N5  &kp N6  &kp KP_PLUS            &none   &none   &none   &none   &none   &trans
-   &trans  &kp KP_DIVIDE &kp N1  &kp N2  &kp N3  &kp KP_ASTERISK        &none   &none   &none   &none   &none   &trans
-                                 &kp N0  &kp DOT &kp ENTER              &kp BSPC  &kp SPACE   &none
+   &kp TILDE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp DEL
+   &sk LALT  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT  &tog 4
+   &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &sl FUNC
+        &sk LCT RL  &mt LGUI RET &lt 1 TAB    &lt 2 BSPC  &mt MEH SPACE &sk RSHFT
                         >;
                 };
         };
