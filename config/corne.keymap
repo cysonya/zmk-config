@@ -23,7 +23,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        display-name="Win"
+                        display-name="Win";
 // -----------------------------------------------------------------------------------------
 // |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
 // | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '"  |  TG(MAC)   |
@@ -32,13 +32,13 @@
                         bindings = <
    &kp TILDE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp DEL
    &sk LALT  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT  &tog 1
-   &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &sl FUNC
+   &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &sl 4
         &sk LCTRL  &mt LGUI RET &lt 2 TAB    &lt 3 BSPC &mt MEH SPACE &sk RSHFT
                         >;
                 };
                 
                 mac_layer {
-                        display-name="Mac"
+                        display-name="Mac";
 // -----------------------------------------------------------------------------------------
 // |   ~  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | DEL  |
 // | LALT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '"  |  TG(MAC)   |
@@ -46,14 +46,14 @@
 //                | LCTRL | ENT | LOWER/Tab |     | RAISE/BSPC | SPACE | RSHFT |
                         bindings = <
    &kp TILDE &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp DEL
-   &sk LALT  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT  &tog 4
-   &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &sl FUNC
+   &sk LALT  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT  &tog 1
+   &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &sl 4
         &kp LGUI  &mt LCTRL RET &lt 2 TAB    &lt 3 BSPC &mt MEH SPACE &sk RSHFT
                         >;
                 };
                 
                 lower_layer {
-                        display-name="Low"
+                        display-name="Low";
 // -----------------------------------------------------------------------------------------
 // |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
 // |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
@@ -68,7 +68,7 @@
                 };
 
                 raise_layer {
-                        display-name="Raise"
+                        display-name="Raise";
 // -----------------------------------------------------------------------------------------
 // |   |  DEL |     |   _  |   +   | PgUp |    |       |      |  UP  |   \   |  "|" |     |
 // |   | HOME | END |   -  |   =   | PgDn |    | PrtSc | LEFT | DOWN | RIGHT | MENU |     |
@@ -82,7 +82,7 @@
                         >;
                 };
                 func_layer {
-                        display-name="Func"
+                        display-name="Func";
 // -----------------------------------------------------------------------------------------
 // |    | F1   | F2  | F3  | F4  | F5  |    |  F6  | F7  | F8  | F9  | F10  |     |
 // |    | F11  | F11 |     |     |     |    | BTCLR| BT1 | BT2 | BT3 | BT4  | BT5 |
